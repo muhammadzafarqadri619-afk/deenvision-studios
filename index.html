@@ -1,0 +1,422 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeenVision Studios | Official Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #080808;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            padding: 24px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #292929;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #ff2525;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+        }
+
+        nav a:hover {
+            color: #ff2525;
+        }
+
+        .hero {
+            min-height: 420px;
+            padding: 100px 8%;
+            background:
+                radial-gradient(ellipse at 75% 50%,
+                #501010 0%, #190909 35%, #080808 75%);
+        }
+
+        .hero p {
+            color: #ff4545;
+            letter-spacing: 4px;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 7vw, 76px);
+            max-width: 750px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #ff2525;
+        }
+
+        .hero .description {
+            color: #cccccc;
+            max-width: 580px;
+            line-height: 1.8;
+            margin-bottom: 28px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 14px 24px;
+            background: #e51b23;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        .section {
+            padding: 55px 8%;
+        }
+
+        .section h2 {
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        .movies {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(220px, 1fr));
+            gap: 24px;
+        }
+
+        .movie {
+            background: #151515;
+            border: 1px solid #292929;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .movie:hover {
+            transform: translateY(-6px);
+            border-color: #ff2525;
+        }
+
+        .poster {
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(145deg,
+                #4a0909, #130909 65%, #080808);
+        }
+
+        .poster h3 {
+            font-size: 28px;
+            letter-spacing: 2px;
+        }
+
+        .movie-info {
+            padding: 20px;
+        }
+
+        .movie-info p {
+            color: #bbbbbb;
+            line-height: 1.6;
+            margin: 12px 0 18px;
+        }
+
+        .movie-info a {
+            color: #ff4545;
+            text-decoration: none;
+        }
+
+        footer {
+            padding: 28px;
+            text-align: center;
+            border-top: 1px solid #292929;
+            color: #888888;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 13px;
+            }
+
+            .hero {
+                padding-top: 75px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">DV STUDIOS</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#movies">Movies</a>
+            <a href="#upcoming">Coming Soon</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <p>WELCOME TO OUR MOVIE UNIVERSE</p>
+
+        <h1>STORIES THAT <span>LIVE FOREVER.</span></h1>
+
+        <div class="description">
+            Welcome to DeenVision Studios, where imagination
+            becomes cinema. Discover our original AI films,
+            animated adventures, and upcoming cinematic projects.
+        </div>
+
+        <a class="button" href="#movies">EXPLORE OUR MOVIES</a>
+    </section>
+
+    <section class="section" id="movies">
+        <h2>OUR MOVIES</h2>
+
+        <div class="movies">
+
+            <div class="movie">
+                <div class="poster">
+                    <h3>THE<br>WRONG<br>HOUSE</h3>
+                </div>
+
+                <div class="movie-info">
+                    <h3>THE WRONG HOUSE</h3>
+                    <p>
+                        A horror-comedy adventure where
+                        a journey takes a terrifying turn.
+                    </p>
+                    <a href="#upcoming">Explore Movie →</a>
+                </div>
+            </div>
+
+            <div class="movie">
+                <div class="poster">
+                    <h3>THE<br>LAST<br>FITNA</h3>
+                </div>
+
+                <div class="movie-info">
+                    <h3>THE LAST FITNA</h3>
+                    <p>
+                        Discover our cinematic Islamic
+                        film project and its epic story.
+                    </p>
+                    <a href="#upcoming">Explore Movie →</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section" id="upcoming">
+        <h2>COMING SOON</h2>
+        <p style="color:#bbbbbb; line-height:1.8;">
+            New stories. New worlds. New cinematic experiences.
+            Stay tuned for upcoming releases from DV Studios.
+        </p>
+    </section>
+
+    <footer>
+        © 2026 DeenVision Studios. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DeenVision Studios</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #080808;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 25px;
+  text-align: center;
+  color: #ff2929;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.hero {
+  text-align: center;
+  padding: 55px 15px;
+  background: linear-gradient(#400909, #080808);
+}
+
+.hero h1 {
+  font-size: clamp(32px, 6vw, 52px);
+}
+
+section {
+  padding: 25px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 22px;
+}
+
+.movie {
+  background: #171717;
+  padding: 15px;
+  border: 1px solid #303030;
+  border-radius: 10px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  border-radius: 7px;
+}
+
+.poster {
+  margin-top: 15px;
+}
+
+video {
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+  background: black;
+  border-radius: 7px;
+}
+
+p {
+  color: #cccccc;
+  line-height: 1.7;
+}
+
+.label {
+  color: #ff4444;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #999999;
+  border-top: 1px solid #292929;
+}
+</style>
+</head>
+
+<body>
+
+<header>DEENVISION STUDIOS</header>
+
+<div class="hero">
+  <p class="label">WELCOME TO OUR MOVIE UNIVERSE</p>
+  <h1>STORIES THAT LIVE FOREVER</h1>
+  <p>Original AI films. Cinematic stories. Unforgettable adventures.</p>
+</div>
+
+<section>
+  <h2>OUR MOVIES</h2>
+
+  <div class="movies">
+
+    <!-- THE WRONG HOUSE -->
+    <div class="movie">
+      <img src="images/wrong-house.jpg"
+           alt="THE WRONG HOUSE official movie poster">
+
+      <h2>THE WRONG HOUSE</h2>
+      <p>
+        A horror-comedy adventure where a trip
+        turns into a terrifying nightmare.
+      </p>
+
+      <p class="label">OFFICIAL TRAILER</p>
+
+      <video controls preload="metadata">
+        <source src="videos/wrong-house-trailer.mp4"
+                type="video/mp4">
+        Your browser cannot play this video.
+      </video>
+
+      <img class="poster"
+           src="images/wrong-house-date.jpg"
+           alt="THE WRONG HOUSE official release date announcement poster">
+    </div>
+
+    <!-- THE LAST FITNA -->
+    <div class="movie">
+      <img src="images/last-fitna.jpg"
+           alt="THE LAST FITNA official movie poster">
+
+      <h2>THE LAST FITNA</h2>
+      <p>
+        An epic cinematic Islamic film project.
+        Explore the complete movie below.
+      </p>
+
+      <p class="label">WATCH THE FULL MOVIE</p>
+
+      <video controls preload="metadata">
+        <source src="videos/last-fitna-movie.mp4"
+                type="video/mp4">
+        Your browser cannot play this video.
+      </video>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>COMING SOON</h2>
+  <p>
+    More original stories and cinematic adventures
+    from DeenVision Studios are on the way.
+  </p>
+</section>
+
+<footer>
+  © 2026 DeenVision Studios. All Rights Reserved.
+</footer>
+
+</body>
+</html>
